@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        input {
+            background-color: blue;
+            color: aliceblue;
+            width: 70px;
+        }
+
+        #inans {
+            width: 210px;
+        }
+
+        #clear {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc">
+        <form name="form">    
+            <input type="text" name="answer" id="inans"><br><br>
+            <input type="button" value=" 1 " onclick="form.answer.value += '1'">
+            <input type="button" value=" 2 " onclick="form.answer.value += '2'">
+            <input type="button" value=" 3 " onclick="form.answer.value += '3'"><br><br>
+
+
+            <input type="button" value=" 4 " onclick="form.answer.value += '4'">
+            <input type="button" value=" 5 " onclick="form.answer.value += '5'">
+            <input type="button" value=" 6 " onclick="form.answer.value += '6'"><br><br>
+
+
+            <input type="button" value=" 7 " onclick="form.answer.value += '7'">
+            <input type="button" value=" 8 " onclick="form.answer.value += '8'">
+            <input type="button" value=" 9 " onclick="form.answer.value += '9'"><br><br>
+
+            <input type="button" value=" 0 " onclick="form.answer.value += '0'">
+            <input type="button" value=" + " onclick="form.answer.value += '+'">
+            <input type="button" value=" - " onclick="form.answer.value += '-'"><br><br>
+
+            <input type="button" value=" / " onclick="form.answer.value += '/'">
+            <input type="button" value=" * " onclick="form.answer.value += '*'">
+            <input type="button" value=" = " onclick="form.answer.value = eval(form.answer.value)"><br><br>
+
+            <input type="button" value=" Clear All " id="clear" onclick="form.answer.value = ' '">
+
+        </form>
+    </div>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple</title>
+    <style>
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple </h1>
+    <input type="text" id="result" readonly>
+    <br>
+    <button onclick="clearResult()">C</button>
+    <button onclick="appendToResult('1')">1</button>
+    <button onclick="appendToResult('2')">2</button>
+    <button onclick="appendToResult('3')">3</button>
+    <button onclick="appendToResult('+')">+</button>
+    <br>
+    <button onclick="appendToResult('4')">4</button>
+    <button onclick="appendToResult('5')">5</button>
+    <button onclick="appendToResult('6')">6</button>
+    <button onclick="appendToResult('-')">-</button>
+    <br>
+    <button onclick="appendToResult('7')">7</button>
+    <button onclick="appendToResult('8')">8</button>
+    <button onclick="appendToResult('9')">9</button>
+    <button onclick="appendToResult('*')">*</button>
+    <br>
+    <button onclick="appendToResult('0')">0</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="appendToResult('/')">/</button>
+    <br>
+
+    <script>
+        function clearResult() {
+            document.getElementById('result').value = '';
+        }
+
+        function appendToResult(value) {        
+            document.getElementById('result').value = document.getElementById('result').value + value;
+        }
+
+        function calculateResult() {
+            const result = eval(document.getElementById('result').value);
+            document.getElementById('result').value = result;
+        }
+                   
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script src="indexpra.js"></script>
+
+  <body>
+    <!-- 1 method by onclick
+
+
+     <button id="bttn" onclick="clicked()">buttonn!</button>
+
+
+    <script>  
+        function clicked(){
+            console.log("clikked on")
+            // alert("clikked on") aa bhi thayy
+        }
+    </scrip> -->
+
+    <!-- 
+    2 method without anyonus function
+
+<button id="bttn">buttonn!</button>
+
+<script>
+    function clicked() {
+        console.log("clikked on")
+    }
+
+
+  let bttn = document.getElementById("bttn");
+  bttn.addEventListener('click',clicked);
+    
+</script> -->
+
+    <!-- 
+3 method with anyonus function
+
+<button id="bttn">buttonn!</button>
+
+<script>
+    
+  let bttn = document.getElementById("bttn");
+  bttn.addEventListener('click',function(){
+    console.log("on mouse")
+  });
+
+
+
+  bttn.addEventListener('mouseover',function(){
+    console.log("mouse under")
+  });
+
+
+  bttn.addEventListener('mouseout',function(){
+    console.log("mouse bahar")
+  });
+
+
+    
+</script>  -->
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

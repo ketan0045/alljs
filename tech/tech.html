@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+    </script> 
+</body>
+</html>
+
+
+<!-- pratice
+
+    1.prompt
+    <script>
+        var data = prompt("your name?")
+
+        if (data != "") {
+            document.write("name is" + " " + data)
+        } else {
+            document.write("name is....." + " " + data)
+        }
+
+    </script>
+    2.confirm
+    <script>
+        function myfunc() {
+            var name = confirm("do you visit ??")
+            if (name == true) {
+                window.open("https://indianexpress.com/article/sports/cricket/ind-vs-zim-live-india-vs-zimbabwe-live-cricket-score-t20-world-cup-2022-8252050/")
+                return true;
+            } else {
+                document.write("nooooo")
+                return false;
+            }
+        }
+
+    </script>
+
+    <input type="button" value="click me" onclick="myfunc()">
+
+    <p id="qqq">ketan</p>
+    <p class="www">hardik</p>
+    <p class="www">akash</p>
+    <p class="www">dharmesh</p>//
+
+
+         3......           
+         <h2>Number calculator</h2>
+    <ul>
+        <li>add</li>
+        <li>sub</li>
+        <li>div</li>
+    </ul>
+    <input type="text" id="data"><br><br>
+    <button onclick="myfunc()">click me</button>
+    <script>
+        function myfunc() {
+            let mydatas = document.getElementById("data").value;
+            switch (mydatas) {
+                case "add": var a = 20;
+                    var b = 10;
+                    var c = a + b;
+                    document.write(c)
+                    break;
+                case "sub": var a = 20;
+                    var b = 10;
+                    var c = a - b;
+                    document.write(c)
+                    break;
+                case "div": var a = 20;
+                    var b = 10;
+                    var c = a / b;
+                    document.write(c)
+                    break;
+
+
+
+                default: alert("noooooooo")
+
+            }
+        }
+
+    
+    <script> 
+// 1.id
+// var a =document.getElementById("qqq").innerHTML
+// document.write(a)
+
+// 2.class
+// var b = document.getElementsByClassName("www")[0].innerHTML
+// document.write(b)
+
+// 3.tagname
+// var c =document.getElementsByTagName("p");
+// document.write(c)
+// console.log(c)
+
+// 4.query how to access first element
+// var d = document.querySelector("p").innerHTML;
+// document.write(d)
+</script>
+
+
+
+
+<script>
+        //1... access children of a body
+        // var a = document.body.children
+        // console.log(a);
+
+        // 2....add new child in a body
+
+        // var b = document.createElement("p");
+        // var c = document.createTextNode("hello")
+        // b.appendChild(c)
+        // console.log(b)
+        // document.body.appendChild(b)
+
+        // 3.access first child and last child
+
+        // var d = document.querySelector("ul")
+        // console.log(d);
+
+        // console.log(d.firstChild);
+        // console.log(d.lastChild);
+
+
+        // 4.sibling
+        // var e = qqq.nextElementSibling
+        // console.log(e)
+
+        // //5... parent node
+        // var d = document.querySelector("ul")
+        // console.log(d.parentNode)
+</script>
+
+
+
+<script>
+    document.getElementById("qqq").style.color = "red";
+    document.getElementById("www").setAttribute("style", "color:yellow; background-color:black;")
+
+
+</script>
+<script>
+    var d = new Date()
+    // document.write(d)
+
+    var month1 = d.getUTCMonth() + 1;
+    var month2 = d.getUTCDate();
+    var month3 = d.getUTCFullYear();
+
+    document.write(month3 + "-" + month1 + "-" + month2)
+</script>
+
+<script>
+
+    var d = new Date();
+    var n = d.getTime()
+
+
+    var hour = d.getHours()
+    var minute = d.getMinutes()
+    var second = d.getSeconds()
+
+
+    document.write(hour)
+        // document.write(minute)
+        // document.write(second)
+</script>
+
+
+
+<button onclick="clearInterval(time)">click</button>
+<p id="eee"></p>
+
+<script>
+
+    var time = setInterval(myfunc, 1000)
+
+    function myfunc() {
+        var d = new Date()
+        var store = d.toLocaleTimeString()
+        document.getElementById("eee").innerHTML = store
+ 
+<button onclick="clearInterval(data)">gggg</button>
+
+<script>
+
+    var data = setTimeout(myfunc, 3000)
+
+    function myfunc() {
+        alert("hhhhhh")
+    }
+
+
+</script>
+
+var a= 10;
+var b= 20;
+var c = eval("a+b")
+var d = eval("a*b")
+var e = eval("b-a")
+
+var res = c+d+e
+console.log(res)
+
+
+
+// access
+// p.change value
+// add new
+// delete
+
+
+// REverse
+
+<h2 >Reverse Reverse Reverse</h2>
+
+ <input type="text" id="in1" onkeyup="myfunc()">
+ <input type="text" id="in2"> 
+
+// function myfunc(){
+// var innn =document.getElementById("in1").value;
+// newstr="";
+
+// for( var i=innn.length -1; i>=0; i--){
+// newstr += innn[i]
+// }
+// document.getElementById("in2").value = newstr;
+// }
+
+// var str =prompt("enter the value");
+// var str2 ="";
+
+// for(var i=str.length-1; i>=0;i--){
+// str2 += str[i]
+// }
+// console.log(str2)
+
+
+// var str ="jay";
+// var store ="";
+
+// for(var i=str.length-1;i>=0; i--){
+// store +=str[i]
+// }
+// console.log(store)
+// REverse
+
+// question
+        // var arry = []
+        // var i = 1;
+        // function func() {
+
+        //     while (i <= 100) {
+        //         if ((i % 3) == 0 && (i % 5) == 0) {
+        //             arry.push("fizzbizz")
+        //         } else if (i % 3 == 0) {
+        //             arry.push("fizz")
+        //         }
+        //         else if (i % 5 == 0) {
+        //             arry.push("bizz")
+        //         } else {
+        //             arry.push(i);
+        //         }
+        //         i++;
+        //     }
+        //     console.log(arry)
+        // }
+        // func();
+
+        
+        // var arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]
+
+        // var str = prompt("enter name")
+
+        // var check = arr.includes(str)
+
+        // if (check == true) {
+        //     alert("welcome" + " " + str + " " + " " + "you are invitdr")
+        // } else {
+        //     alert("sorry" + " " + " " + str + " " + " " + "you are not invited")
+        // }
+
+        // question
+   <script>
+      var database = [
+            {
+                username: "ketan",
+                password: "kalsariya"
+            }
+        ]
+
+        var status = [
+            {
+                name: "yeddds",
+                status: "okvvvay"
+            },
+            {
+                name: "ydddes",
+                status: "okadddssy"
+            }
+        ]
+
+        var username = prompt("enter username")
+        var password = prompt("enter password")
+
+        const func = (username, password) => {
+
+            if (username === database[0].username && password === database[0].password) {
+                console.log({ status })
+            } else {
+                alert("no found")
+            }
+
+
+        }
+        func(username, password);
+
+
+           <script>
+
+        fetch("https://jsonplaceholder.typicode.com/posts")
+            .then((data1) => {
+                // console.log(data1)
+                return data1.json()
+            }).then((data2) => {
+                console.log(data2[4])
+                const value = data2[4]      (niche data2[4] ni jgyaye value krvu )
+                document.getElementById("datas").innerHTML = `the ${data2[4].id} and ${data2[4].title} and ${data2[0000].body}`;
+            }).catch((eooo) => {
+                console.log(`the errore ${eooo}`)
+            });
+<body>
+
+    <p id="data"></p>
+    <script>
+
+        function apidata(index) {
+      using a promise (.then is promise)
+            fetch("https://jsonplaceholder.typicode.com/posts").then((data) => {
+                // console.log(data)
+                return data.json();
+            }).then((asualdata) => {
+                // console.log(asualdata)
+                const finaldata = asualdata[`${index}`]
+                document.getElementById("data").innerHTML = `the id is ...${finaldata.id} & title...${finaldata.title} & body ...${finaldata.body}`
+                console.log(`the id is ...${finaldata.id} & title...${finaldata.title} & body ...${finaldata.body}`)
+
+            }).catch((errore) => {
+                console.log(`the errore ${errore}`)
+            })
+        }
+
+        apidata(5);
+        apidata(1);
+        apidata(2);
+        apidata(3);
+        apidata(4);
+
+    </script>
+
+</body>
+</script>
+<body>
+    <script>
+        async function coviddata(index) {
+            try {
+                const store = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+                const jsondata = await store.json()
+                const finaldata = jsondata[`${index}`]
+                console.log(`the id is ...${finaldata.id} & title...${finaldata.title} & body ...${finaldata.body}`)
+
+            } catch (err) {
+                console.log(`the eroor:${err}`)
+            }
+        }
+
+
+
+
+        coviddata(2);
+
+          const sum = (a) => (b) => (c) => (d) => a + b + c + d
+        const add = sum(5)(10)(15)(20)
+
+        console.log(add)
+    </script>
+</body>
+tagline,vasundhara,rain,dhiwise,bigscal,codezee,elunch,hulkapps,bitrix,par,tecocraft,diffrenz,micsol,invits,narola,logicwind,lanet
+
+<body>
+    <p id="timing">the circle</p>
+    <button onclick="startf()">start</button>
+    <button onclick="stop()">stop</button>
+
+    <script>
+        "use strict"
+        let mydata = document.getElementById("timing")
+        let num = 0;
+        let wstop;
+        const startf = () => {
+            // mydata.innerHTML="loading..."
+            mydata.innerHTML = `loading...`
+            wstop = setInterval(() => {
+                mydata.innerHTML = `the increment ${num}`
+                num++;
+            }, 1000)
+        }
+
+        const stop = () => {
+            clearInterval(wstop)
+            console.log("stp")
+        }
+
+    </script>
+</body>
+
+<body>
+
+
+
+    <script>
+reduce thi sum male,* male,average mle
+        // var arr = [4, 10, 5, 6, 2, 3]
+        // var sum = arr.reduce((accum, curr, ind, aray) => {
+        //     let total = accum + curr  
+        //     if (ind == arr.length - 1) {
+
+        //         return total / arr.length
+        //     }
+        //     return total
+        // })
+        // console.log(sum)
+
+
+
+
+        // "use strict"
+        // method sachi na kevaY total ni
+        // var arr = [4, 10, 5, 6, 2, 3]
+        // var sum = arr.reduce((accum, curr,indx,aray) => {
+        //      let total=accum+curr
+        //      debugger
+        //      return total/arr.length
+        // })
+        // console.log(sum)
+
+
+
+        // var arr = [7, 4, 5, 6, 2, 3]
+        // var sum = arr.reduce((accum, curr) => {
+        //     debugger
+        //     return curr + accum
+        // })
+        // },2)
+
+    </script>
+</body>
+</script>
+
+</script>
+
+</body>
+
+</html>  -->
